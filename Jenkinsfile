@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                sh 'source ~/.nvm/nvm.sh'
                 sh 'nvm use 16'
                 sh 'npm install' 
             }
