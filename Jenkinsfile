@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install --unsafe-perm' 
+                sh 'nvm use 16'
+                sh 'npm install' 
             }
         }
     }
